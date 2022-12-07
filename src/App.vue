@@ -3,7 +3,7 @@
   <!-- Step 3 you must use the imported component-->
   <HeaderTop bookName= " Flight Management" authorName="Details of Flights"/>
   <flightBox :flights="flights"/>  
-  <button class="button" onclick="window.open('https://busy-cyan-lemur-tutu.cyclic.app','_blank')">Pilot Info</button>
+  <button class="button" onclick="window.open('https://friendly-colt-kilt.cyclic.app','_blank')">Pilot Info</button>
 
 </div>
   </template>
@@ -29,10 +29,10 @@
 
       async fetchBooks()
       {
-        const res = await fetch("https://busy-cyan-lemur-tutu.cyclic.app/api")
+        const res = await fetch("https://friendly-colt-kilt.cyclic.app/api")
         const data= await res.json()
-        console.log(data.flights)
-        return data.flights
+        console.log(data)
+        return data
       }
       
     },
